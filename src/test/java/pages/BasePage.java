@@ -13,7 +13,6 @@ public class BasePage extends PageGenerator {
         super(driver);
     }
 
-    //WebDriverWait wait = new WebDriverWait(this.driver, 20);
     WebDriverWait wait = new WebDriverWait(this.driver, 20);
 
     public  void click(WebElement elementAttr){
