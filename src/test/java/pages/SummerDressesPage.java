@@ -16,10 +16,10 @@ public class SummerDressesPage extends BasePage {
     @FindBy(how=How.CSS, using = "img[src='http://automationpractice.com/img/p/1/2/12-home_default.jpg']")
     WebElement product_image_1;
 
-    @FindBy(how=How.CSS, using = "img[src='http://automationpractice.com/img/p/1/2/12-home_default.jpg']")
+    @FindBy(how=How.CSS, using = "img[src='http://automationpractice.com/img/p/1/6/16-home_default.jpg']")
     WebElement product_image_2;
 
-    @FindBy(how=How.CSS, using = "img[src='http://automationpractice.com/img/p/1/2/12-home_default.jpg']")
+    @FindBy(how=How.CSS, using = "img[src='http://automationpractice.com/img/p/2/0/20-home_default.jpg']")
     WebElement product_image_3;
 
     @FindBy(how=How.CSS, using = "div.layer_cart_product h2")
@@ -60,7 +60,6 @@ public class SummerDressesPage extends BasePage {
 
     public void add_a_product_to_cart(String product){
         WebElement product_parent = get_product_container_element_for_a_product(product);
-//        mouseHoverToAnElement(product_image_1);
         WebElement add_to_cart_element = product_parent.findElement(add_to_cart_btn);;
         waitForElement(add_to_cart_element);
         click(add_to_cart_element);

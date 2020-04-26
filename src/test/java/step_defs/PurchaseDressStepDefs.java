@@ -42,7 +42,6 @@ public class PurchaseDressStepDefs {
         home_page.navigate_to_home_page();
     }
 
-//    @When("I add a summer dress \"([^\"]*)\" to the cart")
     @When("I add a summer dress {string} to the cart")
     public void i_add_a_summer_dress_to_the_cart(String summer_dress_product){
         home_page.navigate_to_summer_dress_section();
@@ -59,7 +58,7 @@ public class PurchaseDressStepDefs {
     @And("I can see the detail of the product added in the cart")
     public void i_can_see_the_detail_of_the_product_added_in_cart(){
         String actual_text = summer_dresses_page.get_product_detail_from_cart_overlay();
-        String expected_text = "Printed Summer Dress";
+        String expected_text = "Printed Chiffon Dress";
         Assert.assertTrue(actual_text.contains(expected_text));
     }
 

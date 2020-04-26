@@ -9,11 +9,8 @@ import org.openqa.selenium.interactions.Actions;
 
 public class BasePage extends PageGenerator {
 
-//     WebDriver driver;
-
     public BasePage(WebDriver driver){
         super(driver);
-//        this.driver = driver;
     }
 
     //WebDriverWait wait = new WebDriverWait(this.driver, 20);
